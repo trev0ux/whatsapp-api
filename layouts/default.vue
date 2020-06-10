@@ -1,8 +1,9 @@
 <template>
   <div id="app" class="app">
     <TopNav />
-    <Nav />
     <router-view :key="$route.path" />
+    <nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -10,13 +11,13 @@
 import jQuery from 'jquery';
 import $ from 'jquery';
 import imageCompressor from 'vue-image-compressor';
-import Nav from '../components/Nav';
 import TopNav from '../components/TopNav';
+import Footer from '../components/Footer';
 
 export default {
   components: {
-    Nav,
     TopNav,
+    Footer,
     imageCompressor 
   },
   mounted() {

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Nav />
     <b-container>
       <Banner
         id="home"
@@ -31,7 +32,6 @@
       <Plans id="plans" />
       <FAQ id="faq" />
     </b-container>
-    <Footer />
   </div>
 </template>
 
@@ -45,11 +45,12 @@ import TabsMedia from '../components/TabsMedia.vue';
 import BenefitsLine from '../components/BenefitsLine.vue';
 import Plans from '../components/Plans.vue';
 import FAQ from '../components/FAQ.vue';
-import Footer from '../components/Footer.vue';
+import Nav from '../components/Nav.vue';
 
 export default {
   name: 'Home',
   components: {
+    Nav,
     Banner,
     About,
     HowToUse,
@@ -58,7 +59,6 @@ export default {
     BenefitsLine,
     Plans,
     FAQ,
-    Footer
   }
 };
 </script>
