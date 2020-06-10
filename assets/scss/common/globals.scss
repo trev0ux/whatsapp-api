@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
+
+@import "~bootstrap/scss/bootstrap";
+
+$font-family: 'Nunito', sans-serif;
+$primary-color: #26C195;
+$secondary-color: #0DC042;
+$text-color:  #152646;
+$white: #fff;
+$border-rounded: 50px;
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none !important;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.logo{
+    display: flex;
+
+        @include media-breakpoint-down(sm) {
+          height: 100%;
+          align-items: center;
+
+          .wpp-icon{
+            right: 0;
+          }
+        } 
+
+    .wpp-icon{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      left: 5px;
+    }
+
+    h4{
+        font-size: 36px;
+        font-weight: 900;
+
+       @include media-breakpoint-down(sm) {
+          font-size: 20px;
+          margin: 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+        } 
+    }
+  }
+
+
+
+.green-line{
+    width: 61px;
+    height: 4px;
+    background: $primary-color;
+    display: inline-block;
+}
+
+h1{
+    font-size: 72px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    width: 100%;
+    position: relative;
+
+
+    @include media-breakpoint-down(md) {
+        font-size: 48px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 38px !important;
+        text-align: left;
+     }
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 55px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 24px !important;
+        margin-top: 5px;
+        margin-bottom: 40px;
+        text-align: left;
+        width: 100%;
+     }
+}
+
+h3{
+    font-weight: 900;
+    font-size: 24px;
+}
+
+h5{
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 18px;
+     }
+}
