@@ -2,7 +2,6 @@
   <div id="app" class="app">
     <TopNav />
     <router-view :key="$route.path" />
-    <nuxt />
     <Footer />
   </div>
 </template>
