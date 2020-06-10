@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _74bc4068 = () => interopDefault(import('..\\pages\\whatsapp-api.vue' /* webpackChunkName: "pages_whatsapp-api" */))
 const _4bed2cce = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 // TODO: remove in Nuxt 3
@@ -22,6 +23,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/whatsapp-api",
+    component: _74bc4068,
+    name: "whatsapp-api"
+  }, {
     path: "/",
     component: _4bed2cce,
     name: "index"

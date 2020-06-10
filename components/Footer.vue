@@ -269,7 +269,7 @@ transition: all .2s ease-in-out;
   p {
     font-size: .8rem;
     font-weight: 300;
-    margin-top: .5rem;
+    margin: 0;
     color: #eee;
   }
 }
@@ -294,7 +294,6 @@ transition: all .2s ease-in-out;
     text-align: right;
     font-weight: 300;
     margin: 0px;
-    margin-top: 1.5rem;
     font-size: 1rem;
     @include media-max(md) {
   text-align: left;
@@ -422,5 +421,18 @@ margin-top: 2rem;
 }
   }
 }
+
+p{
+  margin: 0 !important;
+}
+
+a{
+  text-decoration: none !important;
+
+  &:hover{
+    text-decoration: none !important;
+  }
+}
+
 </style>
 

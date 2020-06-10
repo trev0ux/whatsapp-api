@@ -22,6 +22,14 @@ body{
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none !important;
+
+  &:hover{
+    text-decoration: none !important;
+  }
+}
+
 .logo{
     display: flex;
 

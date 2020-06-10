@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="app">
     <TopNav />
-    <router-view :key="$route.path" />
+    <router-view />
     <Footer />
   </div>
 </template>
@@ -9,15 +9,13 @@
 <script>
 import jQuery from 'jquery';
 import $ from 'jquery';
-import imageCompressor from 'vue-image-compressor';
-import TopNav from '../components/TopNav';
-import Footer from '../components/Footer';
+import TopNav from '@/components/TopNav';
+import Footer from '@/components/Footer';
 
 export default {
   components: {
     TopNav,
-    Footer,
-    imageCompressor 
+    Footer
   },
   mounted() {
     AOS.init();

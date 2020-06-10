@@ -539,7 +539,6 @@ ul{
 }
 
 nav {
-  height: 46px;
   @include flex;
   align-items: center;
   justify-content: flex-start;
@@ -909,14 +908,6 @@ ul {
   text-transform: initial;
 }
 
-
-a{
-  text-decoration: none !important;
-
-  &:hover{
-    text-decoration: none !important;
-  }
-}
 .topo .links li a:hover {
   color: #50207e;
 }

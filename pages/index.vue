@@ -37,15 +37,15 @@
 
 <script>
 // @ is an alias to /src
-import Banner from '../components/Banner.vue';
-import About from '../components/About.vue';
-import HowToUse from '../components/HowToUse.vue';
-import Benefits from '../components/Benefits.vue';
-import TabsMedia from '../components/TabsMedia.vue';
-import BenefitsLine from '../components/BenefitsLine.vue';
-import Plans from '../components/Plans.vue';
-import FAQ from '../components/FAQ.vue';
-import Nav from '../components/Nav.vue';
+import Banner from '@/components/Banner.vue';
+import About from '@/components/About.vue';
+import HowToUse from '@/components/HowToUse.vue';
+import Benefits from '@/components/Benefits.vue';
+import TabsMedia from '@/components/TabsMedia.vue';
+import BenefitsLine from '@/components/BenefitsLine.vue';
+import Plans from '@/components/Plans.vue';
+import FAQ from '@/components/FAQ.vue';
+import Nav from '@/components/Nav.vue';
 
 export default {
   name: 'Home',
