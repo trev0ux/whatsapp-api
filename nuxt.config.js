@@ -56,6 +56,15 @@ export default {
   /*
   ** Build configuration
   */
+ build: {
+   /*
+   ** You can extend webpack config here
+   */
+  publicPath: '_whatsapp-api',
+   extend(config, ctx) {
+
+   }
+ },
 
   generate: {
     routes: ['/','whatsapp-api']
