@@ -194,6 +194,7 @@ export default {
     select {
       border-color: $white;
       color: $white;
+      background: $primary-color;
     }
 
     &--price {

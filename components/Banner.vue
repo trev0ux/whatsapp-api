@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     <b-container class="position-relative">
-      <img class="box-background" src="../assets/img/background-home.png" />
+      <img class="box-background" src="../assets/img/background-home.png" alt="background boxes" />
       <b-row>
         <b-col
           xl="6"
@@ -11,7 +11,7 @@
         >
           <div data-aos="fade-right" class="banner__text-home">
             <h1>
-              {{ title }}<img src="../assets/icons/whatsapp-web-icon.png" />
+              {{ title }}<img src="../assets/icons/whatsapp-web-icon.png" alt="icon-whatsapp"/>
             </h1>
             <p>{{ description }}</p>
         <div class="button">
@@ -27,7 +27,7 @@
           sm="12"
           class="mt-sm-4 order-md-1 d-md-flex justify-content-center align-items-center"
         >
-          <img class="banner__mascote" src="../assets/img/mascote.svg" />
+          <img class="banner__mascote" src="../assets/img/mascote.svg" alt="Mascote Volare Host"/>
         </b-col>
       </b-row>
     </b-container>

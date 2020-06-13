@@ -20,6 +20,7 @@
     "jquery": "^3.5.1",
     "nuxt": "^2.0.0",
     "nuxt-sass-resources-loader": "^2.0.5",
+    "prerender-spa-plugin": "^3.4.0",
     "vue-image-compressor": "^1.0.3",
     "vue-router": "^3.2.0",
     "vue-scrollto": "^2.18.1",

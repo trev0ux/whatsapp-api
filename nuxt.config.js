@@ -12,18 +12,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { href: 'https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css', rel: 'stylesheet'},
-      {href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css', rel: 'stylesheet'},
-      {href: 'https://unpkg.com/aos@2.3.1/dist/aos.css', rel: 'stylesheet'},
-      {href: 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css', rel: 'stylesheet'},
+      {href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css', rel: 'stylesheet', async: true},
+      {href: 'https://unpkg.com/aos@2.3.1/dist/aos.css', rel: 'stylesheet', async: true},
+      {href: 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css', rel: 'stylesheet', async: true},
      
     ],
     script: [
-      {src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js'},
-      {src: 'https://unpkg.com/aos@2.3.1/dist/aos.js'},
-      {src: 'https://code.jquery.com/jquery-3.5.1.js'},
+      {src: 'https://unpkg.com/aos@2.3.1/dist/aos.js', async: true},
       {src: '//code.jivosite.com/widget.js', 'data-jv-id': 'UZeQgIztec', async: true},
-      {src: 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAt3PnEU7DjOJ9QkMfKCoYlMqNqsCPIdOw'},
+      {src: 'https://code.jquery.com/jquery-3.4.1.min.js'},
     ],
   },
   /*
@@ -56,16 +53,6 @@ export default {
   /*
   ** Build configuration
   */
- build: {
-   /*
-   ** You can extend webpack config here
-   */
-  publicPath: '_whatsapp-api',
-   extend(config, ctx) {
-
-   }
- },
-
   generate: {
     routes: ['/','whatsapp-api']
   }
