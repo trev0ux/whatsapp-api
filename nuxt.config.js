@@ -41,8 +41,16 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-  ],
+ modules: [
+  // Doc: https://github.com/nuxt-community/axios-module#usage
+  '@nuxtjs/axios',
+  [
+    'nuxt-sass-resources-loader',
+    [
+      '@/assets/scss/common/globals.scss',
+    ]
+  ]
+],
   /*
   ** Nuxt.js modules
   */
@@ -53,6 +61,15 @@ export default {
   /*
   ** Build configuration
   */
+ build: {
+  /*
+  ** You can extend webpack config here
+  */
+ publicPath: '_whatsapp-api',
+  extend(config, ctx) {
+
+  }
+},
   generate: {
     routes: ['/','whatsapp-api']
   }
