@@ -1,7 +1,7 @@
 <template>
     <div class="button">
         <button class="btn-primary">
-            <a href="#0" >{{text}}</a>
+            <a v-bind:href="url">{{text}}</a>
         </button>
     </div>
 </template>
@@ -11,6 +11,11 @@ export default {
   props: {
     text: String,
   },
+  data () {
+    return{
+          url: 'https://www.volarehost.com.br/central/cart.php?a=add&pid='+ this.id +'&billingcycle=semiannually'
+    }
+  }
 };
 </script>
 
@@ -64,7 +69,6 @@ export default {
 
     &:active{
       transform: scale(0.96) !important;      
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
       top: 3px;
     }
     

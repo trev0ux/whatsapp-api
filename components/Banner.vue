@@ -14,8 +14,12 @@
               {{ title }}<img src="../assets/icons/whatsapp-web-icon.png" />
             </h1>
             <p>{{ description }}</p>
-            <Button text="saiba mais" />
-          </div>
+        <div class="button">
+            <button class="btn-primary">
+                <scroll-link href="#plans">Saiba mais</scroll-link>
+            </button>
+        </div>         
+     </div>
         </b-col>
         <b-col
           xl="6"
@@ -31,7 +35,7 @@
 </template>
 
 <script>
-import Button from "./Button.vue";
+import scrollLink from './scrollLink';
 
 export default {
   name: 'Banner',
@@ -40,7 +44,7 @@ export default {
     description: String
   },
   components: {
-    Button
+    scrollLink
   }
 };
 </script>

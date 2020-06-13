@@ -3,7 +3,7 @@
     <div id="nav" class="navbar">
       <div class="container">
         <div class="logo">
-          <h4>WhatsApp API</h4>
+         <scroll-link href="#home"><h4>WhatsApp API</h4></scroll-link>
           <img class="wpp-icon" src="../assets/icons/whatsapp-web-icon.png" />
         </div>
         <div @click="showNav ^= true">
@@ -106,13 +106,8 @@ export default {
   position: fixed;
   z-index: 1;
 
-  @include media-breakpoint-down(md) {
-    padding: 10px 0px;
-  }
-
   @include media-breakpoint-down(sm) {
     font-size: 24px;
-    padding: 15px 10px;
   }
 
   &__mobile {

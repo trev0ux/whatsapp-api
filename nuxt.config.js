@@ -1,5 +1,3 @@
-/* eslint-disable prettier/prettier */
-
 export default {
   mode: 'spa',
   /*
@@ -58,12 +56,6 @@ export default {
   /*
   ** Build configuration
   */
-  build: {
-    publicPath: '_whatsapp-api',
-    extend(config, ctx) {
-
-    }
-  },
 
   generate: {
     routes: ['/','whatsapp-api']
