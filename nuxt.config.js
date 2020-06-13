@@ -1,3 +1,6 @@
+import webpack from 'webpack'
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 export default {
   mode: 'spa',
   /*
@@ -67,6 +70,36 @@ router: {
   /*
   ** Build configuration
   */
+ build: {
+  postcss: {
+    plugins: {
+      cssnano: {
+        preset: [
+          'default',
+          {
+            discardComments: {
+              removeAll: true
+            }
+          }
+        ]
+      }
+    }
+  },
+  optimizeCSS: {
+    cssProcessor: require('css-mqpacker'),
+    cssProcessorPluginOptions: { sort: true }
+  },
+  plugins: [
+  new webpack.ProvidePlugin({
+    // global modules
+    '$': 'jquery',
+    '_': 'lodash',
+    optimization: {
+      minimizer: [new UglifyJsPlugin()],
+    },
+  })
+]
+},
   generate: {
     routes: ['/','whatsapp-api']
   }

@@ -117,6 +117,10 @@ p {
       max-width: 80%;
       margin-top: 50px;
     }
+
+    @include media-breakpoint-down(sm){
+      height: 80% !important;
+    }
   }
 
   @keyframes bounce-in {

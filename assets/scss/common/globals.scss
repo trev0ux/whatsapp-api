@@ -78,6 +78,7 @@ h1{
     font-weight: 900;
     width: 100%;
     position: relative;
+    z-index: 111;
 
 
     @include media-breakpoint-down(md) {
