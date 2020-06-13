@@ -12,15 +12,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css', rel: 'stylesheet', async: true},
-      {href: 'https://unpkg.com/aos@2.3.1/dist/aos.css', rel: 'stylesheet', async: true},
-      {href: 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css', rel: 'stylesheet', async: true},
+      {href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css', rel: 'stylesheet'},
+      {href: 'https://unpkg.com/aos@2.3.1/dist/aos.css', rel: 'stylesheet'},
+      {href: 'https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css', rel: 'stylesheet'},
      
     ],
     script: [
-      {src: 'https://unpkg.com/aos@2.3.1/dist/aos.js', async: true},
+      {src: 'https://unpkg.com/aos@2.3.1/dist/aos.js'},
       {src: '//code.jivosite.com/widget.js', 'data-jv-id': 'UZeQgIztec', async: true},
-      {src: 'https://code.jquery.com/jquery-3.4.1.min.js'},
+      {src: 'https://code.jquery.com/jquery-3.4.1.min.js', async: true},
     ],
   },
   /*
