@@ -28,7 +28,6 @@
       />
       <Benefits id="benefits" />
       <TabsMedia id="tabs" />
-      <BenefitsLine id="benefits-line" />
       <Plans id="plans" />
       <FAQ id="faq" />
     </b-container>
@@ -42,7 +41,6 @@ import About from '@/components/About.vue';
 import HowToUse from '@/components/HowToUse.vue';
 import Benefits from '@/components/Benefits.vue';
 import TabsMedia from '@/components/TabsMedia.vue';
-import BenefitsLine from '@/components/BenefitsLine.vue';
 import Plans from '@/components/Plans.vue';
 import FAQ from '@/components/FAQ.vue';
 import Nav from '@/components/Nav.vue';
@@ -56,7 +54,6 @@ export default {
     HowToUse,
     Benefits,
     TabsMedia,
-    BenefitsLine,
     Plans,
     FAQ,
   }

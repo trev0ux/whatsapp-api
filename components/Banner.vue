@@ -112,7 +112,7 @@ p {
 
     @include media-breakpoint-down(md) {
       order: 1;
-      height: 75%;
+      height: auto;
       top: 20px;
       max-width: 80%;
       margin-top: 50px;

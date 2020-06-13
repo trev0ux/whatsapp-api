@@ -104,13 +104,15 @@ export default async (ssrContext) => {
     return renderErrorPage()
   }
 
+  const s = Date.now()
+
   // Components are already resolved by setContext -> getRouteData (app/utils.js)
   const Components = getMatchedComponents(router.match(ssrContext.url))
 
   /*
   ** Call global middleware (nuxt.config.js)
   */
-  let midd = []
+  let midd = ["pages"]
   midd = midd.map((name) => {
     if (typeof name === 'function') {
       return name
@@ -242,6 +244,8 @@ export default async (ssrContext) => {
 
     return Promise.all(promises)
   }))
+
+  if (process.env.DEBUG && asyncDatas.length) console.debug('Data fetching ' + ssrContext.url + ': ' + (Date.now() - s) + 'ms')
 
   // datas are the first row of each
   ssrContext.nuxt.data = asyncDatas.map(r => r[0] || {})
