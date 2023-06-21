@@ -19,7 +19,7 @@
     "html-minifier": "^4.0.0",
     "ionicons": "^5.0.1",
     "jquery": "^3.5.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "nuxt-compress": "^2.0.0",
     "nuxt-sass-resources-loader": "^2.0.5",
     "prerender-spa-plugin": "^3.4.0",
